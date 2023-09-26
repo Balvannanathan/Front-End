@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI calculator</title>
+</head>
+<body>
+    <div class="container" id="cont">
+        <h2>BMI calculator</h2>
+        <div class="input-group">
+            <input id="inp1">
+            <p>Kg*</p>
+        </div>
+        <div class="input-group">
+            <input id="inp2">
+            <p>Cm*</p>
+        </div>
+        <button id="btn">Calculate</button>
+        
+    </div>
+    <script>
+        let res=document.createElement('div');
+        res.id='result';
+        document.getElementById('cont').appendChild(res);
+
+        const Weight =document.getElementById('inp1');
+        const Height =document.getElementById('inp2');
+        const button =document.getElementById('btn');
+
+        button.addEventListener('click',()=>{
+            let W=Weight.value;
+            let H=Height.value;
+            let result=parseInt(((W/(H*H))*10000).toFixed(1))
+            if(result<=18.4)
+                res.innerText='You are Underweight'
+            else if(result>=18.5 && result<=24.9)
+                res.innerText='You are Normal'   
+            else if(result>=25.0 && result<=39.9)
+                res.innerText='You are Overweight'
+            else
+                res.innerText='You are Obese'
+        })
+    </script>
+
+</body>
+</html>
