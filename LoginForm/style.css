@@ -1,0 +1,76 @@
+body{
+    padding:0;
+    margin: 0;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background-attachment: fixed;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width:400px;
+    margin:20vh auto 0px auto;
+    padding:40px;
+    background-color: white;
+    border-radius: 10px;
+}
+h2{
+    text-align: center;
+    font-size:2em;
+    color:#fdbb2d
+}
+
+.input-group label{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.input-group input{
+    display: flex;
+    width: 90%;
+    padding:10px;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    font-size: 15px;
+    border:3px solid #22c1c3;
+}
+.input-group input:focus{
+    outline: none;
+}
+button{
+    width:95%;
+    margin-top: .5em;
+    padding:8px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fdbb2d;
+    border:none;
+    color:#000000;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.input-group .error{
+    color:rgb(206, 13, 13);
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.input-group.success input{
+    border-color: #00ff80;
+}
+.input-group.error input{
+    border-color: rgb(206, 13, 13)
+}
+.login{
+    text-align: right;
+    margin: .7em 0 .7em 0
+}
+.login a{
+    text-decoration: none;
+    color:#22c1c3;
+    font-size: 15px;
+    cursor: pointer;
+    padding:.3em
+}
+.login a:hover{
+    color:#000000;
+}
