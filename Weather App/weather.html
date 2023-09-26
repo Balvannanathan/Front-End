@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js" defer></script>
+    <title>Weather</title>
+</head>
+<body>
+    <div class="box">
+        <h4>Weather App</h4>
+        <div class="search">
+            <input id='input' type="text" placeholder="enter city name">
+            <i id='search' class="fa-solid fa-magnifying-glass"></i>
+            <i id='location' class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="weather">
+            <div class="wi"><i class="fa-solid fa-cloud-sun-rain"></i></i></div>
+            <h1 id="deg">0°C</h1>
+            <div class="l1">Welcome</div>
+            <div class="l2"></div>
+        </div>
+        <div class="bottom">
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="p"><span id="speed">0 km/h</span><br>Wind Speed</div>
+            </div>
+            <div class="hum">
+                <i class="fa-sharp fa-solid fa-droplet"></i>
+                <div class="p"><span id="level">0%</span><br>Humidity</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
